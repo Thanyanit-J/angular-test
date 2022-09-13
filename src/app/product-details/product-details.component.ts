@@ -11,9 +11,9 @@ import { CartService } from '../cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
   constructor(
-    private route: ActivatedRoute
-  ) // private cartService: CartService,
-  {}
+    private route: ActivatedRoute,
+    private cartService: CartService,
+  ) {}
 
   product: Product | undefined;
 
@@ -29,7 +29,7 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   addToCart(product: Product) {
-    // this.cartService.addToCart(product);
+    this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
   }
 }

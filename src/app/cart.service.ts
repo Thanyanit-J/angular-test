@@ -8,7 +8,7 @@ export class CartService {
     }
   
     getItems() {
-      // return this.items;
+      return this.items;
     }
   
     clearCart() {

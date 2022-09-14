@@ -8,3 +8,8 @@
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
+
+<p *ngIf="items?.length">
+  <button type="button" (click)="clearCart()">Clear</button>
+</p>
+
